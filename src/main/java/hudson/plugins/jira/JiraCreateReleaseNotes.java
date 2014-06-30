@@ -32,11 +32,11 @@ public class JiraCreateReleaseNotes extends BuildWrapper {
 	private String jiraRelease;
 	private String jiraFilter;
 
-	@DataBoundConstructor
 	public JiraCreateReleaseNotes(String jiraProjectKey, String jiraRelease, String jiraEnvironmentVariable) {
 		this(jiraProjectKey, jiraRelease, jiraEnvironmentVariable, DEFAULT_FILTER);
 	}
 	
+	@DataBoundConstructor
 	public JiraCreateReleaseNotes(String jiraProjectKey, String jiraRelease, String jiraEnvironmentVariable, String jiraFilter) {
 		this.jiraRelease = jiraRelease;
 		this.jiraProjectKey = jiraProjectKey;
